@@ -1,6 +1,8 @@
 name: Update Branch with Upstream Changes
 
 on:
+  schedule:
+    - cron: "0 2 * * *"  # UTC时间凌晨2点
   push:
     branches:
       - master  # 当你向 master 分支推送时触发
