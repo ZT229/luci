@@ -127,6 +127,12 @@ msgstr "星期三"
 msgid "Wifi Schedule"
 msgstr "WiFi计划"
 
+#: applications/luci-app-wifischedule/root/usr/share/luci/menu.d/luci-app-wifischedule.json:3
+#: applications/luci-app-wifischedule/root/usr/share/luci/menu.d/luci-app-wifischedule.json:3
+msgid "wifischedule"
+msgstr "WiFi计划"
+
+
 #~ msgid "Cron Jobs"
 #~ msgstr "计划任务"
 
