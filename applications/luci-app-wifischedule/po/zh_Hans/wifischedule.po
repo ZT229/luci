@@ -125,7 +125,7 @@ msgstr "星期三"
 #: applications/luci-app-wifischedule/luasrc/controller/wifischedule/wifi_schedule.lua:27
 #: applications/luci-app-wifischedule/luasrc/model/cbi/wifischedule/wifi_schedule.lua:39
 msgid "Wifi Schedule"
-msgstr "WiFi 计划"
+msgstr "WiFi计划"
 
 #~ msgid "Cron Jobs"
 #~ msgstr "计划任务"
