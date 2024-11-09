@@ -14,7 +14,7 @@
 
 include $(TOPDIR)/rules.mk
 
-LUCI_TITLE:=wifischedule
+LUCI_TITLE:=Wifi Schedule
 LUCI_DEPENDS:=+luci-base +luci-compat +wifischedule
 
 PKG_LICENSE:=ISC
