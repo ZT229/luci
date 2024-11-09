@@ -116,7 +116,7 @@ msgstr "星期二"
 
 #: applications/luci-app-wifischedule/luasrc/model/cbi/wifischedule/wifi_schedule.lua:102
 msgid "Unload Modules (experimental; saves more power)"
-msgstr "卸载模块（实验性的，更省电）"
+msgstr "卸载模块（实验性，更省电）"
 
 #: applications/luci-app-wifischedule/luasrc/model/cbi/wifischedule/wifi_schedule.lua:159
 msgid "Wednesday"
