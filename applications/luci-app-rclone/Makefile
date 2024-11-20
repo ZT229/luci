@@ -23,11 +23,11 @@ PKG_MAINTAINER:=ElonH <elonhhuang@gmail.com>
 define Package/luci-app-rclone/config
 config PACKAGE_$(PKG_NAME)_INCLUDE_rclone-webui
 	bool "Include rclone-webui"
-	default y
+	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_rclone-ng
 	bool "Include rclone-ng (another webui)"
-	default y
+	default n
 endef
 
 include ../../luci.mk
