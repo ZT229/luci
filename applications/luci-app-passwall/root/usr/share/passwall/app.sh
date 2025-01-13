@@ -2151,8 +2151,8 @@ get_config() {
 	FILTER_PROXY_IPV6=$(config_t_get global filter_proxy_ipv6 0)
 	DNS_REDIRECT=$(config_t_get global dns_redirect 1)
 
-	REDIRECT_LIST="socks ss ss-rust ssr sing-box xray trojan-plus naiveproxy hysteria2"
-	TPROXY_LIST="socks ss ss-rust ssr sing-box xray trojan-plus hysteria2"
+	REDIRECT_LIST="socks ss ss-rust ssr sing-box xray trojan-go naiveproxy hysteria2"
+	TPROXY_LIST="socks ss ss-rust ssr sing-box xray trojan-go hysteria2"
 
 	NEXT_DNS_LISTEN_PORT=15353
 	TUN_DNS="127.0.0.1#${NEXT_DNS_LISTEN_PORT}"

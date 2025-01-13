@@ -23,13 +23,13 @@ uci:revert(appname)
 
 local has_ss = api.is_finded("ss-redir")
 local has_ss_rust = api.is_finded("sslocal")
-local has_trojan_plus = api.is_finded("trojan-plus")
+local has_trojan_plus = api.is_finded("trojan-go")
 local has_singbox = api.finded_com("singbox")
 local has_xray = api.finded_com("xray")
 local has_hysteria2 = api.finded_com("hysteria")
 local allowInsecure_default = nil
 local ss_type_default = uci:get(appname, "@global_subscribe[0]", "ss_type") or "shadowsocks-libev"
-local trojan_type_default = uci:get(appname, "@global_subscribe[0]", "trojan_type") or "trojan-plus"
+local trojan_type_default = uci:get(appname, "@global_subscribe[0]", "trojan_type") or "trojan-go"
 local vmess_type_default = uci:get(appname, "@global_subscribe[0]", "vmess_type") or "xray"
 local vless_type_default = uci:get(appname, "@global_subscribe[0]", "vless_type") or "xray"
 local hysteria2_type_default = uci:get(appname, "@global_subscribe[0]", "hysteria2_type") or "hysteria2"
@@ -760,7 +760,7 @@ local function processData(szType, content, add_mode, add_from)
 			end
 		end
 	elseif szType == "trojan" then
-		if trojan_type_default == "trojan-plus" and has_trojan_plus then
+		if trojan_type_default == "trojan-go" and has_trojan_plus then
 			result.type = "Trojan-Plus"
 		elseif trojan_type_default == "sing-box" and has_singbox then
 			result.type = 'sing-box'
@@ -1687,7 +1687,7 @@ local execute = function()
 			filter_keyword_discard_list_default = uci:get(appname, "@global_subscribe[0]", "filter_discard_list") or {}
 			filter_keyword_keep_list_default = uci:get(appname, "@global_subscribe[0]", "filter_keep_list") or {}
 			ss_type_default = uci:get(appname, "@global_subscribe[0]", "ss_type") or "shadowsocks-libev"
-			trojan_type_default = uci:get(appname, "@global_subscribe[0]", "trojan_type") or "trojan-plus"
+			trojan_type_default = uci:get(appname, "@global_subscribe[0]", "trojan_type") or "trojan-go"
 			vmess_type_default = uci:get(appname, "@global_subscribe[0]", "vmess_type") or "xray"
 			vless_type_default = uci:get(appname, "@global_subscribe[0]", "vless_type") or "xray"
 			hysteria2_type_default = uci:get(appname, "@global_subscribe[0]", "hysteria2_type") or "hysteria2"
