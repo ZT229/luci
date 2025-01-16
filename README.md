@@ -9,8 +9,10 @@ This is the OpenWrt "luci"-feed containing LuCI - OpenWrt Configuration Interfac
 ## Usage
 
 This feed is enabled by default. Your feeds.conf.default (or feeds.conf) should contain a line like:
+
+git clone --depth 1 -b self --single-branch https://github.com/ZT229/luci.git
 ```
-src-git luci https://github.com/openwrt/luci.git
+src-git luci https://github.com/ZT229/luci.git;self
 ```
 
 To install all its package definitions, run:
