@@ -39,15 +39,7 @@ jobs:
             echo "合并过程中出现冲突，请手动解决。"
             exit 1
           }
-
-      - name: Merge Upstream Changes into argone
-        run: |
-          git checkout argone  # 替换为你的新分支名称
-          git merge upstream/master || {
-            echo "合并过程中出现冲突，请手动解决。"
-            exit 1
-          }    
-
+ 
       - name: Push Changes
         run: |
           git push origin self  # 推送到你的新分支
