@@ -32,7 +32,7 @@ jobs:
       - name: Fetch Upstream Changes
         run: git fetch upstream
 
-      - name: Merge Upstream Changes into Your Branch
+      - name: Merge Upstream Changes into self
         run: |
           git checkout self  # 替换为你的新分支名称
           git merge upstream/master || {
