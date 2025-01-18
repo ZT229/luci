@@ -26,7 +26,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_btrfs_progs
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_lsblk
 	bool "Include lsblk"
-	default n
+	default y
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_mdadm
 	bool "Include mdadm"
