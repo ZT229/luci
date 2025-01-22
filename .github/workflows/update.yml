@@ -1,6 +1,6 @@
 name: Update Branch with Upstream Changes
 
-#on:
+on:
   schedule:
     - cron: "0 2 * * *"  # UTC时间凌晨2点
   push:
