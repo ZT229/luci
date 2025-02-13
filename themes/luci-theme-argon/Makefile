@@ -9,7 +9,7 @@ TARGET_CFLAGS += -Os -pipe -funroll-loops -march=armv8-a+crypto+crc -mcpu=cortex
 TARGET_LDFLAGS += -Wl,-O2
 
 LUCI_TITLE:=Argon Theme
-LUCI_DEPENDS:=+wget +jsonfilter +luci-app-argon-config
+LUCI_DEPENDS:=+wget +jsonfilter
 
 PKG_VERSION:=2.3.2
 PKG_RELEASE:=20250207
