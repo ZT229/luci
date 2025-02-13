@@ -30,7 +30,7 @@ LUCI_TITLE:=LuCI support for PassWall
 LUCI_PKGARCH:=all
 LUCI_DEPENDS:=+coreutils +coreutils-base64 +coreutils-nohup +curl \
 	+chinadns-ng +dns2socks +ip-full +libuci-lua +lua +luci-compat +luci-lib-jsonc \
-	+microsocks +resolveip +tcping +unzip +ipt2socks \
+	+microsocks +resolveip +tcping +unzip +ipt2socks +brook \
 	+kmod-nft-socket +kmod-nft-tproxy +kmod-nft-nat \
 	+PACKAGE_$(PKG_NAME)_INCLUDE_Brook:brook \
 	+PACKAGE_$(PKG_NAME)_INCLUDE_Haproxy:haproxy \
