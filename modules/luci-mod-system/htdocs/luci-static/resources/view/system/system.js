@@ -143,7 +143,7 @@ return view.extend({
 		o.optional = true;
 
 		o = s.taboption('general', form.ListValue, 'zonename', _('Timezone'));
-		o.value('UTC');
+		o.value('CST-8');
 
 		var zones = Object.keys(timezones || {}).sort();
 		for (var i = 0; i < zones.length; i++)
@@ -161,7 +161,7 @@ return view.extend({
 
 		o = s.taboption('logging', form.Value, 'log_size', _('System log buffer size'), "kiB");
 		o.optional    = true;
-		o.placeholder = 128;
+		o.placeholder = 64;
 		o.datatype    = 'uinteger';
 
 		o = s.taboption('logging', form.Value, 'log_ip', _('External system log server'));
@@ -193,7 +193,7 @@ return view.extend({
 		o.value(1, _('Emergency'));
 
 		o = s.taboption('logging', form.ListValue, 'cronloglevel', _('Cron Log Level'));
-		o.default = 7;
+		o.default = 9;
 		o.value(7, _('Normal'));
 		o.value(9, _('Disabled'));
 		o.value(5, _('Debug'));
@@ -207,12 +207,12 @@ return view.extend({
 
 			o = s.taboption('zram', form.Value, 'zram_size_mb', _('ZRam Size'), _('Size of the ZRam device in megabytes'));
 			o.optional    = true;
-			o.placeholder = 16;
+			o.placeholder = 512;
 			o.datatype    = 'uinteger';
 
 			o = s.taboption('zram', form.ListValue, 'zram_comp_algo', _('ZRam Compression Algorithm'));
 			o.optional    = true;
-			o.default     = 'lzo';
+			o.default     = 'zstd';
 			o.value('lzo', 'lzo');
 			o.value('lz4', 'lz4');
 			o.value('zstd', 'zstd');
@@ -250,8 +250,8 @@ return view.extend({
 
 		if (L.hasSystemFeature('sysntpd')) {
 			var default_servers = [
-				'0.openwrt.pool.ntp.org', '1.openwrt.pool.ntp.org',
-				'2.openwrt.pool.ntp.org', '3.openwrt.pool.ntp.org'
+				'0.ntp.ntsc.ac.cn', '1.cn.ntp.org.cn',
+				'2.ntp.bupt.edu.cn', '3.cn.pool.ntp.org'
 			];
 
 			o = s.taboption('timesync', form.Flag, 'enabled', _('Enable NTP client'));
