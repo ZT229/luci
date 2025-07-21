@@ -16,10 +16,11 @@ LUCI_DEPENDS:= \
 	+luci-app-firewall \
 	+luci-mod-admin-full \
 	+luci-proto-ppp \
-	+luci-theme-bootstrap \
+	+luci-theme-argon \
 	+rpcd-mod-rrdns \
 	+uhttpd \
-	+uhttpd-mod-ubus
+	+uhttpd-mod-ubus \
+	+luci-ssl-openssl
 
 PKG_LICENSE:=Apache-2.0
 
