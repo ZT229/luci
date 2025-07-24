@@ -81,12 +81,12 @@ return view.extend({
 		o = s.option(form.Value, 'log_maxbackups', _('Max log backups'),
 			_('The maximum number of old log files to retain.'));
 		o.datatype = 'uinteger';
-		o.default = '1';
+		o.default = '0';
 
 		o = s.option(form.Value, 'log_maxsize', _('Max log size'),
 			_('The maximum size in megabytes of the log file before it gets rotated.'));
 		o.datatype = 'uinteger';
-		o.default = '5';
+		o.default = '0';
 
 		return m.render();
 	}
