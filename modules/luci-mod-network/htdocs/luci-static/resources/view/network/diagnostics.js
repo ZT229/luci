@@ -70,9 +70,9 @@ return view.extend({
 		    has_traceroute6 = res[2].path || res[3].path,
 		    has_arpscan = res[4].path,
 		    devices = res[5],
-			dns_host = uci.get('luci', 'diag', 'dns') || 'openwrt.org',
-			ping_host = uci.get('luci', 'diag', 'ping') || 'openwrt.org',
-			route_host = uci.get('luci', 'diag', 'route') || 'openwrt.org';
+			dns_host = uci.get('luci', 'diag', 'dns') || 'bing.com',
+			ping_host = uci.get('luci', 'diag', 'ping') || 'bing.com',
+			route_host = uci.get('luci', 'diag', 'route') || 'bing.com';
 
 		var table = E('table', { 'class': 'table' }, [
 				E('tr', { 'class': 'tr' }, [
