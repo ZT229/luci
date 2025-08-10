@@ -32,7 +32,7 @@ config global_haproxy
 
 config global_delay
 	option start_daemon '1'
-	option start_delay '60'
+	option start_delay '20'
 
 config global_forwarding
 	option tcp_no_redir_ports 'disable'
@@ -53,17 +53,17 @@ config global_singbox
 	option sniff_override_destination '0'
 
 config global_other
-	option auto_detection_time 'tcping'
+	option auto_detection_time 'icmp'
 	option show_node_info '0'
 
 config global_rules
-	option auto_update '0'
+	option auto_update '1'
 	option chnlist_update '1'
 	option chnroute_update '1'
 	option chnroute6_update '1'
 	option gfwlist_update '1'
-	option geosite_update '0'
-	option geoip_update '0'
+	option geosite_update '1'
+	option geoip_update '1'
 	list gfwlist_url 'https://fastly.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/gfw.txt'
 	list chnroute_url 'https://ispip.clang.cn/all_cn.txt'
 	list chnroute_url 'https://fastly.jsdelivr.net/gh/gaoyifan/china-operator-ip@ip-lists/china.txt'
